@@ -37,7 +37,7 @@ if __name__ == "__main__":
     if sys.argv[1] == "set" and len(sys.argv) == 4:
         result = client.set(sys.argv[2], sys.argv[3])
         print(result)
-    elif sys.command == "get" and len(sys.argv) == 3:
+    elif sys.argv[1] == "get" and len(sys.argv) == 3:
         result = client.get(sys.argv[2])
         print(result)
     else:
